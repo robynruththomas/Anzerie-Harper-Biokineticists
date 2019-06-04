@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-//containers
-
+//components
+import comingSoon from "./components/comingSoon";
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="Application">
+			<div className="application">
 				<Switch>
-					<Route />
+					<Route exact path={"/"} component={comingSoon} />
 				</Switch>
 			</div>
 		</BrowserRouter>

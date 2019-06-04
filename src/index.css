@@ -1,0 +1,7 @@
+body, 
+#root,
+.application {
+    font-family: 'Gothic A1', sans-serif;
+    height: 100%;
+    width: 100%;
+}
