@@ -17,8 +17,11 @@ class HeaderComponent extends PureComponent {
 			header = (
 				<div className="mobile-header-wrap">
 					<div class="ui fluid vertical menu">
-						<div className="link item toggle" onClick={()=>this.props.onToggleClick()}>
-							<i class="bars  icon" ></i>
+						<div
+							className="link item toggle"
+							onClick={() => this.props.onToggleClick()}
+						>
+							<i class="bars  icon" />
 						</div>
 						<NavLink to={"/home"} className="item header-item">
 							Home
@@ -43,32 +46,34 @@ class HeaderComponent extends PureComponent {
 			);
 		} else {
 			header = (
-				<div className="ui borderless menu">
-					<NavLink to={"/home"} className="item">
-						<img src={logo} alt="ANZERIE HARPER BIOKINETICISTS" />
-					</NavLink>
-					<NavLink to={"/home"} className="item">
-						ANZERIE HARPER BIOKINETICISTS
-					</NavLink>
-					<div className="right menu">
+				<div className="header-wrapper">
+					<div className="ui borderless menu">
 						<NavLink to={"/home"} className="item">
-							Home
+							<img src={logo} alt="ANZERIE HARPER BIOKINETICISTS" />
 						</NavLink>
-						<NavLink to={"/services"} className="item">
-							Services
+						<NavLink to={"/home"} className="item">
+							ANZERIE HARPER BIOKINETICISTS
 						</NavLink>
-						<NavLink to={"/assessments"} className="item">
-							Assessments
-						</NavLink>
-						<NavLink to={"/tariffs"} className="item">
-							Tariffs
-						</NavLink>
-						<NavLink to={"/team"} className="item">
-							Team
-						</NavLink>
-						<NavLink to={"/contactus"} className="item">
-							Contact
-						</NavLink>
+						<div className="right menu">
+							<NavLink to={"/home"} className="item">
+								Home
+							</NavLink>
+							<NavLink to={"/services"} className="item">
+								Services
+							</NavLink>
+							<NavLink to={"/assessments"} className="item">
+								Assessments
+							</NavLink>
+							<NavLink to={"/tariffs"} className="item">
+								Tariffs
+							</NavLink>
+							<NavLink to={"/team"} className="item">
+								Team
+							</NavLink>
+							<NavLink to={"/contactus"} className="item">
+								Contact
+							</NavLink>
+						</div>
 					</div>
 				</div>
 			);

@@ -12,9 +12,9 @@ class ComingSoonComponent extends PureComponent {
 	render() {
 		return <div className={this.props.classes.ComingSoonComponent}>
 			<div className='details-container'>	
-				<div className="ui huge grey inverted header">ANZERIE HARPER BIOKINETICISTS</div>
-				<div className="ui large grey inverted header">COMING SOON</div>
-				<div className='ui medium grey inverted header '>Our website is under construction</div>
+				<div className="ui header header2">ANZERIE HARPER BIOKINETICISTS</div>
+				<div className="ui header header3">COMING SOON</div>
+				<div className='ui header header4'>Our website is under construction</div>
 			</div>
 		</div>;
 	}

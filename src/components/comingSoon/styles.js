@@ -1,18 +1,25 @@
 export default {
 	ComingSoonComponent: {
-		background: 'linear-gradient(-45deg, #0facef, #5c7ea3)',
-		height: '100%',
-		width: '100%',
-		'& .details-container': {
-			alignItems: 'center',
-			color: '#FFF !important',
-			display: 'flex',
-			flexDirection: 'column',
-			height: '100%',
-			justifyContent: 'center',
-			margin: 'auto',
-			textAlign: 'center',
-			width: '100%'
+		height: "100%",
+		marginTop: 30,	
+		width: "100%",
+		"& .details-container": {
+			backgroundColor: '#FFF',
+			alignItems: "center",
+		
+			"& .header": {
+				color: "#5887F9 !important",
+				paddingTop: 20,
+				paddingBottom: 20
+			},
+
+			display: "flex",
+			flexDirection: "column",
+			height: "auto",
+			justifyContent: "center",
+			margin: "auto",
+			textAlign: "center",
+			width: "auto"
 		}
 	}
 };
