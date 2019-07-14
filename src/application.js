@@ -19,7 +19,7 @@ function App() {
 				<div className="page-content">
 					<Switch>
 						<Route exact path={"/"} component={comingSoon} />
-						<Route path={"/home"} component={comingSoon} />
+						<Route path={"/home"} component={landingPage} />
 						<Route path={"/services"} component={comingSoon} />
 						<Route path={"/assessments"} component={comingSoon} />
 						<Route path={"/tariffs"} component={comingSoon} />
